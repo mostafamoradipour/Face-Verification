@@ -1,0 +1,19 @@
+database: 'verification/database'
+endpoint: 'http://127.0.0.1:8081/'
+container: '/database'
+object: '/features'
+thresh: 0.8
+
+detection:
+  device: 'cpu'
+  img_size: 640
+  conf_thres: 0.3
+  iou_thres: 0.5
+  weights: 'verification/detection/weights/yolov5n-face.pt'
+
+extraction:
+  device: 'cpu'
+  img_size: 112
+  weights: 'verification/extraction/weights/w600k_mbf.onnx'
+
+test_img: 'verification/database/test_images/0381_0.jpg'

@@ -1,0 +1,8 @@
+*.jpg
+*.jpeg
+*.png
+*.pt
+*.onnx
+*.pickle
+*.pyc
+*.txt
